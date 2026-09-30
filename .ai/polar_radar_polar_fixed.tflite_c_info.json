@@ -1,0 +1,3577 @@
+{
+  "buffers": [
+    {
+      "alignment": 1,
+      "batch": 1,
+      "channel_first": true,
+      "channel_last": true,
+      "epochs": {
+        "end": 2,
+        "start": 0
+      },
+      "flags": "",
+      "format": "STAI_FORMAT_FLOAT",
+      "id": 1,
+      "is_param": false,
+      "mpool_id": 2,
+      "name": "Input_0_out_0",
+      "nbits": 32,
+      "offset_start": 0,
+      "qmn": {
+        "m": 0,
+        "n": 0,
+        "sign": 1
+      },
+      "shape": [
+        1,
+        4
+      ],
+      "shape_map": [],
+      "size_bytes": 16
+    },
+    {
+      "alignment": 1,
+      "batch": 1,
+      "channel_first": true,
+      "channel_last": true,
+      "epochs": {
+        "end": 15,
+        "start": 14
+      },
+      "flags": "",
+      "format": "STAI_FORMAT_FLOAT",
+      "id": 2,
+      "is_param": false,
+      "mpool_id": 2,
+      "name": "Gemm_5_out_0",
+      "nbits": 32,
+      "offset_start": 16,
+      "qmn": {
+        "m": 0,
+        "n": 0,
+        "sign": 0
+      },
+      "shape": [
+        1,
+        2
+      ],
+      "shape_map": [],
+      "size_bytes": 8
+    },
+    {
+      "alignment": 1,
+      "batch": 4,
+      "channel_first": false,
+      "channel_last": true,
+      "epochs": {
+        "end": 2,
+        "start": 0
+      },
+      "flags": "",
+      "format": "STAI_FORMAT_FLOAT",
+      "id": 3,
+      "is_param": false,
+      "mpool_id": 2,
+      "name": "Gemm_1_reshape_x_2",
+      "nbits": 32,
+      "offset_start": 0,
+      "qmn": {
+        "m": 0,
+        "n": 0,
+        "sign": 1
+      },
+      "shape": [
+        1,
+        4,
+        1,
+        1
+      ],
+      "shape_map": [],
+      "size_bytes": 16
+    },
+    {
+      "alignment": 1,
+      "batch": 32,
+      "channel_first": false,
+      "channel_last": true,
+      "epochs": {
+        "end": 4,
+        "start": 2
+      },
+      "flags": "",
+      "format": "STAI_FORMAT_FLOAT",
+      "id": 4,
+      "is_param": false,
+      "mpool_id": 2,
+      "name": "Gemm_1_conv_4",
+      "nbits": 32,
+      "offset_start": 16,
+      "qmn": {
+        "m": 0,
+        "n": 0,
+        "sign": 0
+      },
+      "shape": [
+        1,
+        32,
+        1,
+        1
+      ],
+      "shape_map": [],
+      "size_bytes": 128
+    },
+    {
+      "alignment": 1,
+      "batch": 1,
+      "channel_first": true,
+      "channel_last": true,
+      "epochs": {
+        "end": 4,
+        "start": 2
+      },
+      "flags": "",
+      "format": "STAI_FORMAT_FLOAT",
+      "id": 5,
+      "is_param": false,
+      "mpool_id": 2,
+      "name": "Gemm_1_squeeze_y_5",
+      "nbits": 32,
+      "offset_start": 16,
+      "qmn": {
+        "m": 0,
+        "n": 0,
+        "sign": 1
+      },
+      "shape": [
+        1,
+        32
+      ],
+      "shape_map": [],
+      "size_bytes": 128
+    },
+    {
+      "alignment": 1,
+      "batch": 1,
+      "channel_first": true,
+      "channel_last": true,
+      "epochs": {
+        "end": 7,
+        "start": 4
+      },
+      "flags": "",
+      "format": "STAI_FORMAT_FLOAT",
+      "id": 6,
+      "is_param": false,
+      "mpool_id": 2,
+      "name": "Gemm_1_out_0",
+      "nbits": 32,
+      "offset_start": 144,
+      "qmn": {
+        "m": 0,
+        "n": 0,
+        "sign": 0
+      },
+      "shape": [
+        1,
+        32
+      ],
+      "shape_map": [],
+      "size_bytes": 128
+    },
+    {
+      "alignment": 1,
+      "batch": 1,
+      "channel_first": true,
+      "channel_last": true,
+      "epochs": {
+        "end": 7,
+        "start": 4
+      },
+      "flags": "",
+      "format": "STAI_FORMAT_FLOAT",
+      "id": 7,
+      "is_param": false,
+      "mpool_id": 2,
+      "name": "Relu_2_out_0",
+      "nbits": 32,
+      "offset_start": 144,
+      "qmn": {
+        "m": 0,
+        "n": 0,
+        "sign": 0
+      },
+      "shape": [
+        1,
+        32
+      ],
+      "shape_map": [],
+      "size_bytes": 128
+    },
+    {
+      "alignment": 1,
+      "batch": 32,
+      "channel_first": false,
+      "channel_last": true,
+      "epochs": {
+        "end": 7,
+        "start": 4
+      },
+      "flags": "",
+      "format": "STAI_FORMAT_FLOAT",
+      "id": 8,
+      "is_param": false,
+      "mpool_id": 2,
+      "name": "Gemm_3_reshape_x_9",
+      "nbits": 32,
+      "offset_start": 144,
+      "qmn": {
+        "m": 0,
+        "n": 0,
+        "sign": 1
+      },
+      "shape": [
+        1,
+        32,
+        1,
+        1
+      ],
+      "shape_map": [],
+      "size_bytes": 128
+    },
+    {
+      "alignment": 1,
+      "batch": 16,
+      "channel_first": false,
+      "channel_last": true,
+      "epochs": {
+        "end": 9,
+        "start": 7
+      },
+      "flags": "",
+      "format": "STAI_FORMAT_FLOAT",
+      "id": 9,
+      "is_param": false,
+      "mpool_id": 2,
+      "name": "Gemm_3_conv_11",
+      "nbits": 32,
+      "offset_start": 0,
+      "qmn": {
+        "m": 0,
+        "n": 0,
+        "sign": 0
+      },
+      "shape": [
+        1,
+        16,
+        1,
+        1
+      ],
+      "shape_map": [],
+      "size_bytes": 64
+    },
+    {
+      "alignment": 1,
+      "batch": 1,
+      "channel_first": true,
+      "channel_last": true,
+      "epochs": {
+        "end": 9,
+        "start": 7
+      },
+      "flags": "",
+      "format": "STAI_FORMAT_FLOAT",
+      "id": 10,
+      "is_param": false,
+      "mpool_id": 2,
+      "name": "Gemm_3_squeeze_y_12",
+      "nbits": 32,
+      "offset_start": 0,
+      "qmn": {
+        "m": 0,
+        "n": 0,
+        "sign": 1
+      },
+      "shape": [
+        1,
+        16
+      ],
+      "shape_map": [],
+      "size_bytes": 64
+    },
+    {
+      "alignment": 1,
+      "batch": 1,
+      "channel_first": true,
+      "channel_last": true,
+      "epochs": {
+        "end": 12,
+        "start": 9
+      },
+      "flags": "",
+      "format": "STAI_FORMAT_FLOAT",
+      "id": 11,
+      "is_param": false,
+      "mpool_id": 2,
+      "name": "Gemm_3_out_0",
+      "nbits": 32,
+      "offset_start": 64,
+      "qmn": {
+        "m": 0,
+        "n": 0,
+        "sign": 0
+      },
+      "shape": [
+        1,
+        16
+      ],
+      "shape_map": [],
+      "size_bytes": 64
+    },
+    {
+      "alignment": 1,
+      "batch": 1,
+      "channel_first": true,
+      "channel_last": true,
+      "epochs": {
+        "end": 12,
+        "start": 9
+      },
+      "flags": "",
+      "format": "STAI_FORMAT_FLOAT",
+      "id": 12,
+      "is_param": false,
+      "mpool_id": 2,
+      "name": "Relu_4_out_0",
+      "nbits": 32,
+      "offset_start": 64,
+      "qmn": {
+        "m": 0,
+        "n": 0,
+        "sign": 0
+      },
+      "shape": [
+        1,
+        16
+      ],
+      "shape_map": [],
+      "size_bytes": 64
+    },
+    {
+      "alignment": 1,
+      "batch": 16,
+      "channel_first": false,
+      "channel_last": true,
+      "epochs": {
+        "end": 12,
+        "start": 9
+      },
+      "flags": "",
+      "format": "STAI_FORMAT_FLOAT",
+      "id": 13,
+      "is_param": false,
+      "mpool_id": 2,
+      "name": "Gemm_5_reshape_x_16",
+      "nbits": 32,
+      "offset_start": 64,
+      "qmn": {
+        "m": 0,
+        "n": 0,
+        "sign": 1
+      },
+      "shape": [
+        1,
+        16,
+        1,
+        1
+      ],
+      "shape_map": [],
+      "size_bytes": 64
+    },
+    {
+      "alignment": 1,
+      "batch": 2,
+      "channel_first": false,
+      "channel_last": true,
+      "epochs": {
+        "end": 14,
+        "start": 12
+      },
+      "flags": "",
+      "format": "STAI_FORMAT_FLOAT",
+      "id": 14,
+      "is_param": false,
+      "mpool_id": 2,
+      "name": "Gemm_5_conv_18",
+      "nbits": 32,
+      "offset_start": 0,
+      "qmn": {
+        "m": 0,
+        "n": 0,
+        "sign": 0
+      },
+      "shape": [
+        1,
+        2,
+        1,
+        1
+      ],
+      "shape_map": [],
+      "size_bytes": 8
+    },
+    {
+      "alignment": 1,
+      "batch": 1,
+      "channel_first": true,
+      "channel_last": true,
+      "epochs": {
+        "end": 14,
+        "start": 12
+      },
+      "flags": "",
+      "format": "STAI_FORMAT_FLOAT",
+      "id": 15,
+      "is_param": false,
+      "mpool_id": 2,
+      "name": "Gemm_5_squeeze_y_19",
+      "nbits": 32,
+      "offset_start": 0,
+      "qmn": {
+        "m": 0,
+        "n": 0,
+        "sign": 1
+      },
+      "shape": [
+        1,
+        2
+      ],
+      "shape_map": [],
+      "size_bytes": 8
+    },
+    {
+      "alignment": 1,
+      "batch": 1,
+      "channel_first": true,
+      "channel_last": true,
+      "epochs": {
+        "end": 15,
+        "start": 0
+      },
+      "flags": "",
+      "format": "STAI_FORMAT_FLOAT",
+      "id": 16,
+      "is_param": true,
+      "mpool_id": 9,
+      "name": "Gemm_1_bias",
+      "nbits": 32,
+      "offset_start": 2688,
+      "qmn": {
+        "m": 0,
+        "n": 0,
+        "sign": 1
+      },
+      "shape": [
+        32
+      ],
+      "shape_map": [],
+      "size_bytes": 128
+    },
+    {
+      "alignment": 1,
+      "batch": 1,
+      "channel_first": true,
+      "channel_last": true,
+      "epochs": {
+        "end": 15,
+        "start": 0
+      },
+      "flags": "",
+      "format": "STAI_FORMAT_FLOAT",
+      "id": 17,
+      "is_param": true,
+      "mpool_id": 9,
+      "name": "Gemm_3_bias",
+      "nbits": 32,
+      "offset_start": 2816,
+      "qmn": {
+        "m": 0,
+        "n": 0,
+        "sign": 1
+      },
+      "shape": [
+        16
+      ],
+      "shape_map": [],
+      "size_bytes": 64
+    },
+    {
+      "alignment": 1,
+      "batch": 1,
+      "channel_first": true,
+      "channel_last": true,
+      "epochs": {
+        "end": 15,
+        "start": 0
+      },
+      "flags": "",
+      "format": "STAI_FORMAT_FLOAT",
+      "id": 18,
+      "is_param": true,
+      "mpool_id": 9,
+      "name": "Gemm_5_bias",
+      "nbits": 32,
+      "offset_start": 2880,
+      "qmn": {
+        "m": 0,
+        "n": 0,
+        "sign": 1
+      },
+      "shape": [
+        2
+      ],
+      "shape_map": [],
+      "size_bytes": 8
+    },
+    {
+      "alignment": 1,
+      "batch": 4,
+      "channel_first": false,
+      "channel_last": true,
+      "epochs": {
+        "end": 15,
+        "start": 0
+      },
+      "flags": "",
+      "format": "STAI_FORMAT_FLOAT",
+      "id": 19,
+      "is_param": true,
+      "mpool_id": 9,
+      "name": "Gemm_1_weights_transposed_3",
+      "nbits": 32,
+      "offset_start": 2048,
+      "qmn": {
+        "m": 0,
+        "n": 0,
+        "sign": 1
+      },
+      "shape": [
+        32,
+        4,
+        1,
+        1
+      ],
+      "shape_map": [],
+      "size_bytes": 512
+    },
+    {
+      "alignment": 1,
+      "batch": 32,
+      "channel_first": false,
+      "channel_last": true,
+      "epochs": {
+        "end": 15,
+        "start": 0
+      },
+      "flags": "",
+      "format": "STAI_FORMAT_FLOAT",
+      "id": 20,
+      "is_param": true,
+      "mpool_id": 9,
+      "name": "Gemm_3_weights_transposed_10",
+      "nbits": 32,
+      "offset_start": 0,
+      "qmn": {
+        "m": 0,
+        "n": 0,
+        "sign": 1
+      },
+      "shape": [
+        16,
+        32,
+        1,
+        1
+      ],
+      "shape_map": [],
+      "size_bytes": 2048
+    },
+    {
+      "alignment": 1,
+      "batch": 16,
+      "channel_first": false,
+      "channel_last": true,
+      "epochs": {
+        "end": 15,
+        "start": 0
+      },
+      "flags": "",
+      "format": "STAI_FORMAT_FLOAT",
+      "id": 21,
+      "is_param": true,
+      "mpool_id": 9,
+      "name": "Gemm_5_weights_transposed_17",
+      "nbits": 32,
+      "offset_start": 2560,
+      "qmn": {
+        "m": 0,
+        "n": 0,
+        "sign": 1
+      },
+      "shape": [
+        2,
+        16,
+        1,
+        1
+      ],
+      "shape_map": [],
+      "size_bytes": 128
+    }
+  ],
+  "ec_blobs_info": [],
+  "environment": {
+    "generated_model": {
+      "generated_time": "2026-09-16T07:22:17.060389300+0000",
+      "model_files": [
+        {
+          "name": "polar.c",
+          "signature": ""
+        },
+        {
+          "name": "atonbuf.AXISRAM6.raw",
+          "signature": ""
+        },
+        {
+          "name": "atonbuf.AXISRAM5.raw",
+          "signature": ""
+        },
+        {
+          "name": "atonbuf.AXISRAM4.raw",
+          "signature": ""
+        },
+        {
+          "name": "atonbuf.AXISRAM3.raw",
+          "signature": ""
+        },
+        {
+          "name": "atonbuf.AXISRAM2.raw",
+          "signature": ""
+        },
+        {
+          "name": "atonbuf.AXISRAM1.raw",
+          "signature": ""
+        },
+        {
+          "name": "atonbuf.AXIFLEXMEM.raw",
+          "signature": ""
+        },
+        {
+          "name": "atonbuf.xSPI1.raw",
+          "signature": ""
+        },
+        {
+          "name": "atonbuf.xSPI2.raw",
+          "signature": ""
+        }
+      ],
+      "n_params": 0,
+      "name": "polar",
+      "size": 0,
+      "type": ""
+    },
+    "network_signature": "0xc29ab633f00594f1",
+    "target": "",
+    "test_name": "",
+    "tools": [
+      {
+        "arguments": "generate --target stm32n6 --name polar -m C:/Users/HP/Downloads/radar_polar_fixed.tflite --st-neural-art n6-allmems-O3@C:/Users/HP/STM32Cube/Repository//Packs/STMicroelectronics/X-CUBE-AI/10.2.1/scripts/N6_scripts/user_neuralart.json --workspace C:/Users/HP/AppData/Local/Temp/mxAI_workspace229837901404800014578396644089541305 --output C:/Users/HP/.stm32cubemx/network_output",
+        "environment": [
+          "STATS_TYPE=X-CUBE-AI"
+        ],
+        "input_model": {
+          "generated_time": "",
+          "model_files": [
+            {
+              "name": "radar_polar_fixed.tflite",
+              "signature": "0xd419661a453effe10ac17a4a578a9289"
+            }
+          ],
+          "n_params": 722,
+          "name": "radar_polar_fixed",
+          "size": 2888,
+          "type": "tflite"
+        },
+        "name": "ST.EdgeAI.Core",
+        "version": "2.2.0-20266 2adc00962"
+      },
+      {
+        "arguments": " -i C:\\Users\\HP\\.stm32cubemx\\network_output\\radar_polar_fixed_OE_3_3_0.onnx --json-quant-file C:\\Users\\HP\\.stm32cubemx\\network_output\\radar_polar_fixed_OE_3_3_0_Q.json -g polar.c --load-mdesc C:\\Users\\HP\\STM32Cube\\Repository\\Packs\\STMicroelectronics\\X-CUBE-AI\\10.2.1\\scripts\\N6_scripts\\my_mdescs\\stm32n6.mdesc --load-mpool C:\\Users\\HP\\STM32Cube\\Repository\\Packs\\STMicroelectronics\\X-CUBE-AI\\10.2.1\\scripts\\N6_scripts\\my_mpools\\stm32n6.mpool --save-mpool-file C:\\Users\\HP\\AppData\\Local\\Temp\\mxAI_workspace229837901404800014578396644089541305\\neural_art__polar\\stm32n6.mpool --out-dir-prefix C:\\Users\\HP\\AppData\\Local\\Temp\\mxAI_workspace229837901404800014578396644089541305\\neural_art__polar/ --optimization 3 --all-buffers-info --mvei --cache-maintenance --Oauto-sched --native-float --enable-virtual-mem-pools --Omax-ca-pipe 4 --Ocache-opt --Os --output-info-file c_info.json --network-name polar",
+        "environment": [],
+        "input_model": {
+          "generated_time": "2026-09-16T12:52:16+0530",
+          "model_files": [
+            {
+              "name": "radar_polar_fixed_OE_3_3_0.onnx",
+              "signature": "0x24aaae6ec3e62b3419a7cb55b8e09a2f"
+            }
+          ],
+          "n_params": 0,
+          "name": "network",
+          "size": 0,
+          "type": ""
+        },
+        "name": "ATONN Compiler",
+        "version": "1.1.1-14 Internal Build atonn-v1.1.1-14-ge619e8606 (SHA:e619e8606099384540d70eeaaa8091752b1bebe9 on date 25/06/2025) Based on Version atonn.1.1.1-14"
+      }
+    ]
+  },
+  "graphs": [
+    {
+      "edges": [
+        {
+          "attributes": {},
+          "buffer": 0,
+          "edge_kind": "EDGE_FLOW",
+          "end": {
+            "node_id": 9,
+            "port": 0
+          },
+          "id": 1,
+          "name": "epochdep_0_1",
+          "start": {
+            "node_id": 1,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 0,
+          "edge_kind": "EDGE_FLOW",
+          "end": {
+            "node_id": 11,
+            "port": 0
+          },
+          "id": 2,
+          "name": "epochdep_1_2",
+          "start": {
+            "node_id": 9,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 0,
+          "edge_kind": "EDGE_FLOW",
+          "end": {
+            "node_id": 13,
+            "port": 0
+          },
+          "id": 3,
+          "name": "epochdep_2_3",
+          "start": {
+            "node_id": 11,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 0,
+          "edge_kind": "EDGE_FLOW",
+          "end": {
+            "node_id": 15,
+            "port": 0
+          },
+          "id": 4,
+          "name": "epochdep_3_4",
+          "start": {
+            "node_id": 13,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 0,
+          "edge_kind": "EDGE_FLOW",
+          "end": {
+            "node_id": 17,
+            "port": 0
+          },
+          "id": 5,
+          "name": "epochdep_4_5",
+          "start": {
+            "node_id": 15,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 0,
+          "edge_kind": "EDGE_FLOW",
+          "end": {
+            "node_id": 19,
+            "port": 0
+          },
+          "id": 6,
+          "name": "epochdep_5_6",
+          "start": {
+            "node_id": 17,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 0,
+          "edge_kind": "EDGE_FLOW",
+          "end": {
+            "node_id": 21,
+            "port": 0
+          },
+          "id": 7,
+          "name": "epochdep_6_7",
+          "start": {
+            "node_id": 19,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 0,
+          "edge_kind": "EDGE_FLOW",
+          "end": {
+            "node_id": 23,
+            "port": 0
+          },
+          "id": 8,
+          "name": "epochdep_7_8",
+          "start": {
+            "node_id": 21,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 0,
+          "edge_kind": "EDGE_FLOW",
+          "end": {
+            "node_id": 25,
+            "port": 0
+          },
+          "id": 9,
+          "name": "epochdep_8_9",
+          "start": {
+            "node_id": 23,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 0,
+          "edge_kind": "EDGE_FLOW",
+          "end": {
+            "node_id": 27,
+            "port": 0
+          },
+          "id": 10,
+          "name": "epochdep_9_10",
+          "start": {
+            "node_id": 25,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 0,
+          "edge_kind": "EDGE_FLOW",
+          "end": {
+            "node_id": 29,
+            "port": 0
+          },
+          "id": 11,
+          "name": "epochdep_10_11",
+          "start": {
+            "node_id": 27,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 0,
+          "edge_kind": "EDGE_FLOW",
+          "end": {
+            "node_id": 31,
+            "port": 0
+          },
+          "id": 12,
+          "name": "epochdep_11_12",
+          "start": {
+            "node_id": 29,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 0,
+          "edge_kind": "EDGE_FLOW",
+          "end": {
+            "node_id": 33,
+            "port": 0
+          },
+          "id": 13,
+          "name": "epochdep_12_13",
+          "start": {
+            "node_id": 31,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 0,
+          "edge_kind": "EDGE_FLOW",
+          "end": {
+            "node_id": 35,
+            "port": 0
+          },
+          "id": 14,
+          "name": "epochdep_13_14",
+          "start": {
+            "node_id": 33,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 0,
+          "edge_kind": "EDGE_FLOW",
+          "end": {
+            "node_id": 37,
+            "port": 0
+          },
+          "id": 15,
+          "name": "epochdep_14_15",
+          "start": {
+            "node_id": 35,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 3,
+          "edge_kind": "EDGE_MEMORY",
+          "end": {
+            "node_id": 12,
+            "port": 0
+          },
+          "id": 16,
+          "name": "Gemm_1_reshape_x_2_FLOAT__1_4_1_1__",
+          "start": {
+            "node_id": 10,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 19,
+          "edge_kind": "EDGE_MEMORY",
+          "end": {
+            "node_id": 12,
+            "port": 0
+          },
+          "id": 17,
+          "name": "Gemm_1_weights_transposed_3_FLOAT__32_4_1_1__",
+          "start": {
+            "node_id": 5,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 4,
+          "edge_kind": "EDGE_MEMORY",
+          "end": {
+            "node_id": 14,
+            "port": 0
+          },
+          "id": 18,
+          "name": "Gemm_1_conv_4_FLOAT__1_32_1_1__",
+          "start": {
+            "node_id": 12,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 5,
+          "edge_kind": "EDGE_MEMORY",
+          "end": {
+            "node_id": 16,
+            "port": 0
+          },
+          "id": 19,
+          "name": "Gemm_1_squeeze_y_5_FLOAT__1_32__",
+          "start": {
+            "node_id": 14,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 16,
+          "edge_kind": "EDGE_MEMORY",
+          "end": {
+            "node_id": 16,
+            "port": 0
+          },
+          "id": 20,
+          "name": "Gemm_1_bias_FLOAT__32__",
+          "start": {
+            "node_id": 4,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 6,
+          "edge_kind": "EDGE_MEMORY",
+          "end": {
+            "node_id": 18,
+            "port": 0
+          },
+          "id": 21,
+          "name": "Gemm_1_out_0_FLOAT__1_32__",
+          "start": {
+            "node_id": 16,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 8,
+          "edge_kind": "EDGE_MEMORY",
+          "end": {
+            "node_id": 22,
+            "port": 0
+          },
+          "id": 22,
+          "name": "Gemm_3_reshape_x_9_FLOAT__1_32_1_1__",
+          "start": {
+            "node_id": 20,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 20,
+          "edge_kind": "EDGE_MEMORY",
+          "end": {
+            "node_id": 22,
+            "port": 0
+          },
+          "id": 23,
+          "name": "Gemm_3_weights_transposed_10_FLOAT__16_32_1_1__",
+          "start": {
+            "node_id": 8,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 9,
+          "edge_kind": "EDGE_MEMORY",
+          "end": {
+            "node_id": 24,
+            "port": 0
+          },
+          "id": 24,
+          "name": "Gemm_3_conv_11_FLOAT__1_16_1_1__",
+          "start": {
+            "node_id": 22,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 10,
+          "edge_kind": "EDGE_MEMORY",
+          "end": {
+            "node_id": 26,
+            "port": 0
+          },
+          "id": 25,
+          "name": "Gemm_3_squeeze_y_12_FLOAT__1_16__",
+          "start": {
+            "node_id": 24,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 17,
+          "edge_kind": "EDGE_MEMORY",
+          "end": {
+            "node_id": 26,
+            "port": 0
+          },
+          "id": 26,
+          "name": "Gemm_3_bias_FLOAT__16__",
+          "start": {
+            "node_id": 3,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 11,
+          "edge_kind": "EDGE_MEMORY",
+          "end": {
+            "node_id": 28,
+            "port": 0
+          },
+          "id": 27,
+          "name": "Gemm_3_out_0_FLOAT__1_16__",
+          "start": {
+            "node_id": 26,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 13,
+          "edge_kind": "EDGE_MEMORY",
+          "end": {
+            "node_id": 32,
+            "port": 0
+          },
+          "id": 28,
+          "name": "Gemm_5_reshape_x_16_FLOAT__1_16_1_1__",
+          "start": {
+            "node_id": 30,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 21,
+          "edge_kind": "EDGE_MEMORY",
+          "end": {
+            "node_id": 32,
+            "port": 0
+          },
+          "id": 29,
+          "name": "Gemm_5_weights_transposed_17_FLOAT__2_16_1_1__",
+          "start": {
+            "node_id": 6,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 14,
+          "edge_kind": "EDGE_MEMORY",
+          "end": {
+            "node_id": 34,
+            "port": 0
+          },
+          "id": 30,
+          "name": "Gemm_5_conv_18_FLOAT__1_2_1_1__",
+          "start": {
+            "node_id": 32,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 15,
+          "edge_kind": "EDGE_MEMORY",
+          "end": {
+            "node_id": 36,
+            "port": 0
+          },
+          "id": 31,
+          "name": "Gemm_5_squeeze_y_19_FLOAT__1_2__",
+          "start": {
+            "node_id": 34,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 18,
+          "edge_kind": "EDGE_MEMORY",
+          "end": {
+            "node_id": 36,
+            "port": 0
+          },
+          "id": 32,
+          "name": "Gemm_5_bias_FLOAT__2__",
+          "start": {
+            "node_id": 2,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 2,
+          "edge_kind": "EDGE_MEMORY",
+          "end": {
+            "node_id": 38,
+            "port": 0
+          },
+          "id": 33,
+          "name": "Gemm_5_out_0_FLOAT__1_2__",
+          "start": {
+            "node_id": 36,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 1,
+          "edge_kind": "EDGE_MEMORY",
+          "end": {
+            "node_id": 10,
+            "port": 0
+          },
+          "id": 34,
+          "name": "Input_0_out_0_FLOAT__1_4__",
+          "start": {
+            "node_id": 7,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 7,
+          "edge_kind": "EDGE_MEMORY",
+          "end": {
+            "node_id": 20,
+            "port": 0
+          },
+          "id": 35,
+          "name": "Relu_2_out_0_FLOAT__1_32__",
+          "start": {
+            "node_id": 18,
+            "port": 0
+          }
+        },
+        {
+          "attributes": {},
+          "buffer": 12,
+          "edge_kind": "EDGE_MEMORY",
+          "end": {
+            "node_id": 30,
+            "port": 0
+          },
+          "id": 36,
+          "name": "Relu_4_out_0_FLOAT__1_16__",
+          "start": {
+            "node_id": 28,
+            "port": 0
+          }
+        }
+      ],
+      "id": 1,
+      "inputs": [
+        1
+      ],
+      "name": "polar",
+      "nodes": [
+        {
+          "attributes": {},
+          "description": "",
+          "id": 1,
+          "inputs": [],
+          "macc": 0,
+          "mapping": "NODE_HW",
+          "name": "epoch_0",
+          "original_nodes": [],
+          "outputs": [],
+          "scratchs": [],
+          "subgraph_nodes": [
+            {
+              "attributes": {},
+              "description": "Node kind=Param",
+              "id": 2,
+              "inputs": [],
+              "macc": 0,
+              "mapping": "NODE_HW",
+              "name": "Gemm_5_bias",
+              "original_nodes": [],
+              "outputs": [],
+              "scratchs": [],
+              "subgraph_nodes": [],
+              "sw_functions": []
+            },
+            {
+              "attributes": {},
+              "description": "Node kind=Param",
+              "id": 3,
+              "inputs": [],
+              "macc": 0,
+              "mapping": "NODE_HW",
+              "name": "Gemm_3_bias",
+              "original_nodes": [],
+              "outputs": [],
+              "scratchs": [],
+              "subgraph_nodes": [],
+              "sw_functions": []
+            },
+            {
+              "attributes": {},
+              "description": "Node kind=Param",
+              "id": 4,
+              "inputs": [],
+              "macc": 0,
+              "mapping": "NODE_HW",
+              "name": "Gemm_1_bias",
+              "original_nodes": [],
+              "outputs": [],
+              "scratchs": [],
+              "subgraph_nodes": [],
+              "sw_functions": []
+            },
+            {
+              "attributes": {},
+              "description": "Node kind=Param",
+              "id": 5,
+              "inputs": [],
+              "macc": 0,
+              "mapping": "NODE_HW",
+              "name": "Gemm_1_weights_transposed_3",
+              "original_nodes": [],
+              "outputs": [],
+              "scratchs": [],
+              "subgraph_nodes": [],
+              "sw_functions": []
+            },
+            {
+              "attributes": {},
+              "description": "Node kind=Param",
+              "id": 6,
+              "inputs": [],
+              "macc": 0,
+              "mapping": "NODE_HW",
+              "name": "Gemm_5_weights_transposed_17",
+              "original_nodes": [],
+              "outputs": [],
+              "scratchs": [],
+              "subgraph_nodes": [],
+              "sw_functions": []
+            },
+            {
+              "attributes": {},
+              "description": "Node kind=Param",
+              "id": 7,
+              "inputs": [],
+              "macc": 0,
+              "mapping": "NODE_HW",
+              "name": "Input_0_out_0",
+              "original_nodes": [],
+              "outputs": [],
+              "scratchs": [],
+              "subgraph_nodes": [],
+              "sw_functions": []
+            },
+            {
+              "attributes": {},
+              "description": "Node kind=Param",
+              "id": 8,
+              "inputs": [],
+              "macc": 0,
+              "mapping": "NODE_HW",
+              "name": "Gemm_3_weights_transposed_10",
+              "original_nodes": [],
+              "outputs": [],
+              "scratchs": [],
+              "subgraph_nodes": [],
+              "sw_functions": []
+            }
+          ],
+          "sw_functions": []
+        },
+        {
+          "attributes": {},
+          "description": "",
+          "id": 9,
+          "inputs": [],
+          "macc": 0,
+          "mapping": "NODE_HW",
+          "name": "epoch_1",
+          "original_nodes": [],
+          "outputs": [],
+          "scratchs": [],
+          "subgraph_nodes": [
+            {
+              "attributes": {},
+              "description": "Node kind=Reshape",
+              "id": 10,
+              "inputs": [],
+              "macc": 0,
+              "mapping": "NODE_HW",
+              "name": "Gemm_1_reshape_x_2",
+              "original_nodes": [],
+              "outputs": [],
+              "scratchs": [],
+              "subgraph_nodes": [],
+              "sw_functions": []
+            }
+          ],
+          "sw_functions": []
+        },
+        {
+          "attributes": {},
+          "description": "",
+          "id": 11,
+          "inputs": [
+            3,
+            19
+          ],
+          "macc": 0,
+          "mapping": "NODE_SW",
+          "name": "epoch_2",
+          "original_nodes": [],
+          "outputs": [
+            4
+          ],
+          "scratchs": [],
+          "subgraph_nodes": [
+            {
+              "attributes": {},
+              "description": "Node kind=Conv",
+              "id": 12,
+              "inputs": [
+                3,
+                19
+              ],
+              "macc": 0,
+              "mapping": "NODE_SW",
+              "name": "Gemm_1_conv_4",
+              "original_nodes": [],
+              "outputs": [
+                4
+              ],
+              "scratchs": [],
+              "subgraph_nodes": [],
+              "sw_functions": []
+            }
+          ],
+          "sw_functions": []
+        },
+        {
+          "attributes": {},
+          "description": "",
+          "id": 13,
+          "inputs": [],
+          "macc": 0,
+          "mapping": "NODE_HW",
+          "name": "epoch_3",
+          "original_nodes": [],
+          "outputs": [],
+          "scratchs": [],
+          "subgraph_nodes": [
+            {
+              "attributes": {},
+              "description": "Node kind=Reshape",
+              "id": 14,
+              "inputs": [],
+              "macc": 0,
+              "mapping": "NODE_HW",
+              "name": "Gemm_1_squeeze_y_5",
+              "original_nodes": [],
+              "outputs": [],
+              "scratchs": [],
+              "subgraph_nodes": [],
+              "sw_functions": []
+            }
+          ],
+          "sw_functions": []
+        },
+        {
+          "attributes": {},
+          "description": "",
+          "id": 15,
+          "inputs": [
+            5,
+            16
+          ],
+          "macc": 0,
+          "mapping": "NODE_SW",
+          "name": "epoch_4",
+          "original_nodes": [],
+          "outputs": [
+            6
+          ],
+          "scratchs": [],
+          "subgraph_nodes": [
+            {
+              "attributes": {},
+              "description": "Node kind=Add",
+              "id": 16,
+              "inputs": [
+                5,
+                16
+              ],
+              "macc": 0,
+              "mapping": "NODE_SW",
+              "name": "Gemm_1_add_6",
+              "original_nodes": [],
+              "outputs": [
+                6
+              ],
+              "scratchs": [],
+              "subgraph_nodes": [],
+              "sw_functions": []
+            }
+          ],
+          "sw_functions": []
+        },
+        {
+          "attributes": {},
+          "description": "",
+          "id": 17,
+          "inputs": [
+            6
+          ],
+          "macc": 0,
+          "mapping": "NODE_SW",
+          "name": "epoch_5",
+          "original_nodes": [],
+          "outputs": [
+            7
+          ],
+          "scratchs": [],
+          "subgraph_nodes": [
+            {
+              "attributes": {},
+              "description": "Node kind=Relu",
+              "id": 18,
+              "inputs": [
+                6
+              ],
+              "macc": 0,
+              "mapping": "NODE_SW",
+              "name": "Relu_2",
+              "original_nodes": [],
+              "outputs": [
+                7
+              ],
+              "scratchs": [],
+              "subgraph_nodes": [],
+              "sw_functions": []
+            }
+          ],
+          "sw_functions": []
+        },
+        {
+          "attributes": {},
+          "description": "",
+          "id": 19,
+          "inputs": [],
+          "macc": 0,
+          "mapping": "NODE_HW",
+          "name": "epoch_6",
+          "original_nodes": [],
+          "outputs": [],
+          "scratchs": [],
+          "subgraph_nodes": [
+            {
+              "attributes": {},
+              "description": "Node kind=Reshape",
+              "id": 20,
+              "inputs": [],
+              "macc": 0,
+              "mapping": "NODE_HW",
+              "name": "Gemm_3_reshape_x_9",
+              "original_nodes": [],
+              "outputs": [],
+              "scratchs": [],
+              "subgraph_nodes": [],
+              "sw_functions": []
+            }
+          ],
+          "sw_functions": []
+        },
+        {
+          "attributes": {},
+          "description": "",
+          "id": 21,
+          "inputs": [
+            8,
+            20
+          ],
+          "macc": 0,
+          "mapping": "NODE_SW",
+          "name": "epoch_7",
+          "original_nodes": [],
+          "outputs": [
+            9
+          ],
+          "scratchs": [],
+          "subgraph_nodes": [
+            {
+              "attributes": {},
+              "description": "Node kind=Conv",
+              "id": 22,
+              "inputs": [
+                8,
+                20
+              ],
+              "macc": 0,
+              "mapping": "NODE_SW",
+              "name": "Gemm_3_conv_11",
+              "original_nodes": [],
+              "outputs": [
+                9
+              ],
+              "scratchs": [],
+              "subgraph_nodes": [],
+              "sw_functions": []
+            }
+          ],
+          "sw_functions": []
+        },
+        {
+          "attributes": {},
+          "description": "",
+          "id": 23,
+          "inputs": [],
+          "macc": 0,
+          "mapping": "NODE_HW",
+          "name": "epoch_8",
+          "original_nodes": [],
+          "outputs": [],
+          "scratchs": [],
+          "subgraph_nodes": [
+            {
+              "attributes": {},
+              "description": "Node kind=Reshape",
+              "id": 24,
+              "inputs": [],
+              "macc": 0,
+              "mapping": "NODE_HW",
+              "name": "Gemm_3_squeeze_y_12",
+              "original_nodes": [],
+              "outputs": [],
+              "scratchs": [],
+              "subgraph_nodes": [],
+              "sw_functions": []
+            }
+          ],
+          "sw_functions": []
+        },
+        {
+          "attributes": {},
+          "description": "",
+          "id": 25,
+          "inputs": [
+            10,
+            17
+          ],
+          "macc": 0,
+          "mapping": "NODE_SW",
+          "name": "epoch_9",
+          "original_nodes": [],
+          "outputs": [
+            11
+          ],
+          "scratchs": [],
+          "subgraph_nodes": [
+            {
+              "attributes": {},
+              "description": "Node kind=Add",
+              "id": 26,
+              "inputs": [
+                10,
+                17
+              ],
+              "macc": 0,
+              "mapping": "NODE_SW",
+              "name": "Gemm_3_add_13",
+              "original_nodes": [],
+              "outputs": [
+                11
+              ],
+              "scratchs": [],
+              "subgraph_nodes": [],
+              "sw_functions": []
+            }
+          ],
+          "sw_functions": []
+        },
+        {
+          "attributes": {},
+          "description": "",
+          "id": 27,
+          "inputs": [
+            11
+          ],
+          "macc": 0,
+          "mapping": "NODE_SW",
+          "name": "epoch_10",
+          "original_nodes": [],
+          "outputs": [
+            12
+          ],
+          "scratchs": [],
+          "subgraph_nodes": [
+            {
+              "attributes": {},
+              "description": "Node kind=Relu",
+              "id": 28,
+              "inputs": [
+                11
+              ],
+              "macc": 0,
+              "mapping": "NODE_SW",
+              "name": "Relu_4",
+              "original_nodes": [],
+              "outputs": [
+                12
+              ],
+              "scratchs": [],
+              "subgraph_nodes": [],
+              "sw_functions": []
+            }
+          ],
+          "sw_functions": []
+        },
+        {
+          "attributes": {},
+          "description": "",
+          "id": 29,
+          "inputs": [],
+          "macc": 0,
+          "mapping": "NODE_HW",
+          "name": "epoch_11",
+          "original_nodes": [],
+          "outputs": [],
+          "scratchs": [],
+          "subgraph_nodes": [
+            {
+              "attributes": {},
+              "description": "Node kind=Reshape",
+              "id": 30,
+              "inputs": [],
+              "macc": 0,
+              "mapping": "NODE_HW",
+              "name": "Gemm_5_reshape_x_16",
+              "original_nodes": [],
+              "outputs": [],
+              "scratchs": [],
+              "subgraph_nodes": [],
+              "sw_functions": []
+            }
+          ],
+          "sw_functions": []
+        },
+        {
+          "attributes": {},
+          "description": "",
+          "id": 31,
+          "inputs": [
+            13,
+            21
+          ],
+          "macc": 0,
+          "mapping": "NODE_SW",
+          "name": "epoch_12",
+          "original_nodes": [],
+          "outputs": [
+            14
+          ],
+          "scratchs": [],
+          "subgraph_nodes": [
+            {
+              "attributes": {},
+              "description": "Node kind=Conv",
+              "id": 32,
+              "inputs": [
+                13,
+                21
+              ],
+              "macc": 0,
+              "mapping": "NODE_SW",
+              "name": "Gemm_5_conv_18",
+              "original_nodes": [],
+              "outputs": [
+                14
+              ],
+              "scratchs": [],
+              "subgraph_nodes": [],
+              "sw_functions": []
+            }
+          ],
+          "sw_functions": []
+        },
+        {
+          "attributes": {},
+          "description": "",
+          "id": 33,
+          "inputs": [],
+          "macc": 0,
+          "mapping": "NODE_HW",
+          "name": "epoch_13",
+          "original_nodes": [],
+          "outputs": [],
+          "scratchs": [],
+          "subgraph_nodes": [
+            {
+              "attributes": {},
+              "description": "Node kind=Reshape",
+              "id": 34,
+              "inputs": [],
+              "macc": 0,
+              "mapping": "NODE_HW",
+              "name": "Gemm_5_squeeze_y_19",
+              "original_nodes": [],
+              "outputs": [],
+              "scratchs": [],
+              "subgraph_nodes": [],
+              "sw_functions": []
+            }
+          ],
+          "sw_functions": []
+        },
+        {
+          "attributes": {},
+          "description": "",
+          "id": 35,
+          "inputs": [
+            15,
+            18
+          ],
+          "macc": 0,
+          "mapping": "NODE_SW",
+          "name": "epoch_14",
+          "original_nodes": [],
+          "outputs": [
+            2
+          ],
+          "scratchs": [],
+          "subgraph_nodes": [
+            {
+              "attributes": {},
+              "description": "Node kind=Add",
+              "id": 36,
+              "inputs": [
+                15,
+                18
+              ],
+              "macc": 0,
+              "mapping": "NODE_SW",
+              "name": "Gemm_5_add_20",
+              "original_nodes": [],
+              "outputs": [
+                2
+              ],
+              "scratchs": [],
+              "subgraph_nodes": [],
+              "sw_functions": []
+            }
+          ],
+          "sw_functions": []
+        },
+        {
+          "attributes": {},
+          "description": "",
+          "id": 37,
+          "inputs": [
+            2
+          ],
+          "macc": 0,
+          "mapping": "NODE_SW",
+          "name": "epoch_15",
+          "original_nodes": [],
+          "outputs": [],
+          "scratchs": [],
+          "subgraph_nodes": [
+            {
+              "attributes": {},
+              "description": "Node kind=Return",
+              "id": 38,
+              "inputs": [
+                2
+              ],
+              "macc": 0,
+              "mapping": "NODE_SW",
+              "name": "__NN__RETURN__",
+              "original_nodes": [],
+              "outputs": [],
+              "scratchs": [],
+              "subgraph_nodes": [],
+              "sw_functions": []
+            }
+          ],
+          "sw_functions": []
+        }
+      ],
+      "original_inputs": [
+        {
+          "c_shape_map": [
+            "BATCH",
+            "CH"
+          ],
+          "data_format": {
+            "quantizer": "NONE",
+            "scale": [],
+            "size": 32,
+            "type": "FLOAT",
+            "zero": []
+          },
+          "name": "serving_default_keras_tensor0",
+          "shape": [
+            1,
+            4
+          ],
+          "shape_map": [
+            "BATCH",
+            "CH"
+          ]
+        }
+      ],
+      "original_outputs": [
+        {
+          "c_shape_map": [
+            "BATCH",
+            "CH"
+          ],
+          "data_format": {
+            "quantizer": "NONE",
+            "scale": [],
+            "size": 32,
+            "type": "FLOAT",
+            "zero": []
+          },
+          "name": "gemm_2",
+          "shape": [
+            1,
+            2
+          ],
+          "shape_map": [
+            "BATCH",
+            "CH"
+          ]
+        }
+      ],
+      "outputs": [
+        2
+      ]
+    }
+  ],
+  "json_schema_version": "2.0",
+  "memory_accesses": [
+    {
+      "mpool_id": 8,
+      "node_id": 1,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 9,
+      "node_id": 1,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 2,
+      "node_id": 1,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 3,
+      "node_id": 1,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 4,
+      "node_id": 1,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 1,
+      "node_id": 1,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 5,
+      "node_id": 1,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 6,
+      "node_id": 1,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 7,
+      "node_id": 1,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 8,
+      "node_id": 9,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 9,
+      "node_id": 9,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 2,
+      "node_id": 9,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 3,
+      "node_id": 9,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 4,
+      "node_id": 9,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 1,
+      "node_id": 9,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 5,
+      "node_id": 9,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 6,
+      "node_id": 9,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 7,
+      "node_id": 9,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 8,
+      "node_id": 11,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 9,
+      "node_id": 11,
+      "read_cycles": 768,
+      "reads": 512,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 2,
+      "node_id": 11,
+      "read_cycles": 0,
+      "reads": 16,
+      "write_cycles": 5,
+      "writes": 128
+    },
+    {
+      "mpool_id": 3,
+      "node_id": 11,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 4,
+      "node_id": 11,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 1,
+      "node_id": 11,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 5,
+      "node_id": 11,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 6,
+      "node_id": 11,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 7,
+      "node_id": 11,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 8,
+      "node_id": 13,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 9,
+      "node_id": 13,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 2,
+      "node_id": 13,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 3,
+      "node_id": 13,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 4,
+      "node_id": 13,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 1,
+      "node_id": 13,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 5,
+      "node_id": 13,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 6,
+      "node_id": 13,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 7,
+      "node_id": 13,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 8,
+      "node_id": 15,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 9,
+      "node_id": 15,
+      "read_cycles": 192,
+      "reads": 128,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 2,
+      "node_id": 15,
+      "read_cycles": 5,
+      "reads": 128,
+      "write_cycles": 5,
+      "writes": 128
+    },
+    {
+      "mpool_id": 3,
+      "node_id": 15,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 4,
+      "node_id": 15,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 1,
+      "node_id": 15,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 5,
+      "node_id": 15,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 6,
+      "node_id": 15,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 7,
+      "node_id": 15,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 8,
+      "node_id": 17,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 9,
+      "node_id": 17,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 2,
+      "node_id": 17,
+      "read_cycles": 5,
+      "reads": 128,
+      "write_cycles": 5,
+      "writes": 128
+    },
+    {
+      "mpool_id": 3,
+      "node_id": 17,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 4,
+      "node_id": 17,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 1,
+      "node_id": 17,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 5,
+      "node_id": 17,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 6,
+      "node_id": 17,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 7,
+      "node_id": 17,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 8,
+      "node_id": 19,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 9,
+      "node_id": 19,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 2,
+      "node_id": 19,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 3,
+      "node_id": 19,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 4,
+      "node_id": 19,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 1,
+      "node_id": 19,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 5,
+      "node_id": 19,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 6,
+      "node_id": 19,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 7,
+      "node_id": 19,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 8,
+      "node_id": 21,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 9,
+      "node_id": 21,
+      "read_cycles": 3072,
+      "reads": 2048,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 2,
+      "node_id": 21,
+      "read_cycles": 5,
+      "reads": 128,
+      "write_cycles": 2,
+      "writes": 64
+    },
+    {
+      "mpool_id": 3,
+      "node_id": 21,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 4,
+      "node_id": 21,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 1,
+      "node_id": 21,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 5,
+      "node_id": 21,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 6,
+      "node_id": 21,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 7,
+      "node_id": 21,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 8,
+      "node_id": 23,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 9,
+      "node_id": 23,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 2,
+      "node_id": 23,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 3,
+      "node_id": 23,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 4,
+      "node_id": 23,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 1,
+      "node_id": 23,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 5,
+      "node_id": 23,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 6,
+      "node_id": 23,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 7,
+      "node_id": 23,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 8,
+      "node_id": 25,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 9,
+      "node_id": 25,
+      "read_cycles": 96,
+      "reads": 64,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 2,
+      "node_id": 25,
+      "read_cycles": 2,
+      "reads": 64,
+      "write_cycles": 2,
+      "writes": 64
+    },
+    {
+      "mpool_id": 3,
+      "node_id": 25,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 4,
+      "node_id": 25,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 1,
+      "node_id": 25,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 5,
+      "node_id": 25,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 6,
+      "node_id": 25,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 7,
+      "node_id": 25,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 8,
+      "node_id": 27,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 9,
+      "node_id": 27,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 2,
+      "node_id": 27,
+      "read_cycles": 2,
+      "reads": 64,
+      "write_cycles": 2,
+      "writes": 64
+    },
+    {
+      "mpool_id": 3,
+      "node_id": 27,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 4,
+      "node_id": 27,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 1,
+      "node_id": 27,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 5,
+      "node_id": 27,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 6,
+      "node_id": 27,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 7,
+      "node_id": 27,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 8,
+      "node_id": 29,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 9,
+      "node_id": 29,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 2,
+      "node_id": 29,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 3,
+      "node_id": 29,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 4,
+      "node_id": 29,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 1,
+      "node_id": 29,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 5,
+      "node_id": 29,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 6,
+      "node_id": 29,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 7,
+      "node_id": 29,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 8,
+      "node_id": 31,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 9,
+      "node_id": 31,
+      "read_cycles": 192,
+      "reads": 128,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 2,
+      "node_id": 31,
+      "read_cycles": 2,
+      "reads": 64,
+      "write_cycles": 0,
+      "writes": 8
+    },
+    {
+      "mpool_id": 3,
+      "node_id": 31,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 4,
+      "node_id": 31,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 1,
+      "node_id": 31,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 5,
+      "node_id": 31,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 6,
+      "node_id": 31,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 7,
+      "node_id": 31,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 8,
+      "node_id": 33,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 9,
+      "node_id": 33,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 2,
+      "node_id": 33,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 3,
+      "node_id": 33,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 4,
+      "node_id": 33,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 1,
+      "node_id": 33,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 5,
+      "node_id": 33,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 6,
+      "node_id": 33,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 7,
+      "node_id": 33,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 8,
+      "node_id": 35,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 9,
+      "node_id": 35,
+      "read_cycles": 12,
+      "reads": 8,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 2,
+      "node_id": 35,
+      "read_cycles": 0,
+      "reads": 8,
+      "write_cycles": 0,
+      "writes": 8
+    },
+    {
+      "mpool_id": 3,
+      "node_id": 35,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 4,
+      "node_id": 35,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 1,
+      "node_id": 35,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 5,
+      "node_id": 35,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 6,
+      "node_id": 35,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 7,
+      "node_id": 35,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 8,
+      "node_id": 37,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 9,
+      "node_id": 37,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 2,
+      "node_id": 37,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 3,
+      "node_id": 37,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 4,
+      "node_id": 37,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 1,
+      "node_id": 37,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 5,
+      "node_id": 37,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 6,
+      "node_id": 37,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    },
+    {
+      "mpool_id": 7,
+      "node_id": 37,
+      "read_cycles": 0,
+      "reads": 0,
+      "write_cycles": 0,
+      "writes": 0
+    }
+  ],
+  "memory_footprint": {
+    "activations": 272,
+    "io": [
+      0,
+      0
+    ],
+    "kernel_flash": 42003,
+    "kernel_ram": 13,
+    "series": "stm32n6npu",
+    "toolchain": "arm-none-eabi-gcc (GNU Tools for STM32 14.3.rel1.20251027-0700) 14.3.1 20250623",
+    "toolchain_flash": 14558,
+    "toolchain_ram": 0,
+    "weights": 2888
+  },
+  "memory_pools": [
+    {
+      "address": "875888640",
+      "alignment": 8,
+      "attributes": {
+        "burst_max_length": 4294967295,
+        "burst_penalty": 0,
+        "byte_width": 8,
+        "freq_ratio": 1.25,
+        "latency": "HIGH",
+        "read_power": 19.006,
+        "score": 94,
+        "throughput": "HIGH",
+        "use_for_initrs": false,
+        "write_power": 15.79
+      },
+      "buffers": [],
+      "cacheable": "CACHEABLE_UNDEF",
+      "fname": "atonbuf.AXISRAM6.raw",
+      "id": 1,
+      "name": "npuRAM6",
+      "offset_start": 0,
+      "persistent": true,
+      "pipelined": "PIPELINED_ON",
+      "rights": "ACC_WRITE",
+      "size_bytes": 458752,
+      "subpools": [],
+      "used_size_bytes": 0,
+      "user_allocated": false
+    },
+    {
+      "address": "875429888",
+      "alignment": 8,
+      "attributes": {
+        "burst_max_length": 4294967295,
+        "burst_penalty": 0,
+        "byte_width": 8,
+        "freq_ratio": 1.25,
+        "latency": "HIGH",
+        "read_power": 18.531,
+        "score": 94,
+        "throughput": "HIGH",
+        "use_for_initrs": false,
+        "write_power": 16.201
+      },
+      "buffers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "cacheable": "CACHEABLE_UNDEF",
+      "fname": "atonbuf.AXISRAM5.raw",
+      "id": 2,
+      "name": "npuRAM5",
+      "offset_start": 0,
+      "persistent": true,
+      "pipelined": "PIPELINED_ON",
+      "rights": "ACC_WRITE",
+      "size_bytes": 458752,
+      "subpools": [],
+      "used_size_bytes": 272,
+      "user_allocated": false
+    },
+    {
+      "address": "874971136",
+      "alignment": 8,
+      "attributes": {
+        "burst_max_length": 4294967295,
+        "burst_penalty": 0,
+        "byte_width": 8,
+        "freq_ratio": 1.25,
+        "latency": "HIGH",
+        "read_power": 18.531,
+        "score": 94,
+        "throughput": "HIGH",
+        "use_for_initrs": false,
+        "write_power": 16.201
+      },
+      "buffers": [],
+      "cacheable": "CACHEABLE_UNDEF",
+      "fname": "atonbuf.AXISRAM4.raw",
+      "id": 3,
+      "name": "npuRAM4",
+      "offset_start": 0,
+      "persistent": true,
+      "pipelined": "PIPELINED_ON",
+      "rights": "ACC_WRITE",
+      "size_bytes": 458752,
+      "subpools": [],
+      "used_size_bytes": 0,
+      "user_allocated": false
+    },
+    {
+      "address": "874512384",
+      "alignment": 8,
+      "attributes": {
+        "burst_max_length": 4294967295,
+        "burst_penalty": 0,
+        "byte_width": 8,
+        "freq_ratio": 1.25,
+        "latency": "HIGH",
+        "read_power": 18.531,
+        "score": 94,
+        "throughput": "HIGH",
+        "use_for_initrs": false,
+        "write_power": 16.201
+      },
+      "buffers": [],
+      "cacheable": "CACHEABLE_UNDEF",
+      "fname": "atonbuf.AXISRAM3.raw",
+      "id": 4,
+      "name": "npuRAM3",
+      "offset_start": 0,
+      "persistent": true,
+      "pipelined": "PIPELINED_ON",
+      "rights": "ACC_WRITE",
+      "size_bytes": 458752,
+      "subpools": [],
+      "used_size_bytes": 0,
+      "user_allocated": false
+    },
+    {
+      "address": "873463808",
+      "alignment": 8,
+      "attributes": {
+        "burst_max_length": 4294967295,
+        "burst_penalty": 0,
+        "byte_width": 8,
+        "freq_ratio": 2.5,
+        "latency": "MID",
+        "read_power": 17.324,
+        "score": 84,
+        "throughput": "MID",
+        "use_for_initrs": false,
+        "write_power": 15.321
+      },
+      "buffers": [],
+      "cacheable": "CACHEABLE_UNDEF",
+      "fname": "atonbuf.AXISRAM2.raw",
+      "id": 5,
+      "name": "cpuRAM2",
+      "offset_start": 0,
+      "persistent": true,
+      "pipelined": "PIPELINED_ON",
+      "rights": "ACC_WRITE",
+      "size_bytes": 1048576,
+      "subpools": [],
+      "used_size_bytes": 0,
+      "user_allocated": false
+    },
+    {
+      "address": "872824832",
+      "alignment": 8,
+      "attributes": {
+        "burst_max_length": 4294967295,
+        "burst_penalty": 0,
+        "byte_width": 8,
+        "freq_ratio": 2.5,
+        "latency": "MID",
+        "read_power": 16.616,
+        "score": 84,
+        "throughput": "MID",
+        "use_for_initrs": false,
+        "write_power": 14.522
+      },
+      "buffers": [],
+      "cacheable": "CACHEABLE_UNDEF",
+      "fname": "atonbuf.AXISRAM1.raw",
+      "id": 6,
+      "name": "cpuRAM1",
+      "offset_start": 0,
+      "persistent": true,
+      "pipelined": "PIPELINED_ON",
+      "rights": "ACC_WRITE",
+      "size_bytes": 0,
+      "subpools": [],
+      "used_size_bytes": 0,
+      "user_allocated": false
+    },
+    {
+      "address": "872415232",
+      "alignment": 8,
+      "attributes": {
+        "burst_max_length": 4294967295,
+        "burst_penalty": 0,
+        "byte_width": 8,
+        "freq_ratio": 2.5,
+        "latency": "MID",
+        "read_power": 9.381,
+        "score": 84,
+        "throughput": "MID",
+        "use_for_initrs": false,
+        "write_power": 8.569
+      },
+      "buffers": [],
+      "cacheable": "CACHEABLE_UNDEF",
+      "fname": "atonbuf.AXIFLEXMEM.raw",
+      "id": 7,
+      "name": "flexMEM",
+      "offset_start": 0,
+      "persistent": true,
+      "pipelined": "PIPELINED_ON",
+      "rights": "ACC_WRITE",
+      "size_bytes": 0,
+      "subpools": [],
+      "used_size_bytes": 0,
+      "user_allocated": false
+    },
+    {
+      "address": "2415919104",
+      "alignment": 8,
+      "attributes": {
+        "burst_max_length": 4294967295,
+        "burst_penalty": 0,
+        "byte_width": 2,
+        "freq_ratio": 5,
+        "latency": "LOW",
+        "read_power": 380,
+        "score": 82,
+        "throughput": "MID",
+        "use_for_initrs": true,
+        "write_power": 340
+      },
+      "buffers": [],
+      "cacheable": "CACHEABLE_ON",
+      "fname": "atonbuf.xSPI1.raw",
+      "id": 8,
+      "name": "hyperRAM",
+      "offset_start": 0,
+      "persistent": true,
+      "pipelined": "PIPELINED_ON",
+      "rights": "ACC_WRITE",
+      "size_bytes": 33554432,
+      "subpools": [],
+      "used_size_bytes": 0,
+      "user_allocated": false
+    },
+    {
+      "address": "1895825408",
+      "alignment": 8,
+      "attributes": {
+        "burst_max_length": 4294967295,
+        "burst_penalty": 0,
+        "byte_width": 1,
+        "freq_ratio": 6,
+        "latency": "LOW",
+        "read_power": 110,
+        "score": 50,
+        "throughput": "MID",
+        "use_for_initrs": true,
+        "write_power": 400
+      },
+      "buffers": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "cacheable": "CACHEABLE_ON",
+      "fname": "atonbuf.xSPI2.raw",
+      "id": 9,
+      "name": "octoFlash",
+      "offset_start": 0,
+      "persistent": true,
+      "pipelined": "PIPELINED_ON",
+      "rights": "ACC_READ",
+      "size_bytes": 117440512,
+      "subpools": [],
+      "used_size_bytes": 2888,
+      "user_allocated": false
+    },
+    {
+      "address": "873463808",
+      "alignment": 8,
+      "attributes": {
+        "burst_max_length": 4294967295,
+        "burst_penalty": 0,
+        "byte_width": 8,
+        "freq_ratio": 2.5,
+        "latency": "MID",
+        "read_power": 19.006,
+        "score": 85,
+        "throughput": "MID",
+        "use_for_initrs": false,
+        "write_power": 16.201
+      },
+      "buffers": [],
+      "cacheable": "CACHEABLE_UNDEF",
+      "fname": "",
+      "id": 10,
+      "name": "cpuRAM2_npuRAM3_npuRAM4_npuRAM5_npuRAM6",
+      "offset_start": 0,
+      "persistent": true,
+      "pipelined": "PIPELINED_ON",
+      "rights": "ACC_WRITE",
+      "size_bytes": 2883584,
+      "subpools": [
+        5,
+        4,
+        3,
+        2,
+        1
+      ],
+      "used_size_bytes": 1966352,
+      "user_allocated": false
+    }
+  ],
+  "power_estimates": [
+    {
+      "average_acc_power_mw": 0,
+      "average_memory_power_mw": 0,
+      "compute_cycles": 0,
+      "max_cycles": 0,
+      "node_id": 1,
+      "ops": 0
+    },
+    {
+      "average_acc_power_mw": 0,
+      "average_memory_power_mw": 0,
+      "compute_cycles": 0,
+      "max_cycles": 0,
+      "node_id": 9,
+      "ops": 0
+    },
+    {
+      "average_acc_power_mw": 0,
+      "average_memory_power_mw": 0,
+      "compute_cycles": 164,
+      "max_cycles": 3072,
+      "node_id": 11,
+      "ops": 256
+    },
+    {
+      "average_acc_power_mw": 0,
+      "average_memory_power_mw": 0,
+      "compute_cycles": 0,
+      "max_cycles": 0,
+      "node_id": 13,
+      "ops": 0
+    },
+    {
+      "average_acc_power_mw": 0,
+      "average_memory_power_mw": 0,
+      "compute_cycles": 96,
+      "max_cycles": 768,
+      "node_id": 15,
+      "ops": 32
+    },
+    {
+      "average_acc_power_mw": 0,
+      "average_memory_power_mw": 0,
+      "compute_cycles": 64,
+      "max_cycles": 64,
+      "node_id": 17,
+      "ops": 0
+    },
+    {
+      "average_acc_power_mw": 0,
+      "average_memory_power_mw": 0,
+      "compute_cycles": 0,
+      "max_cycles": 0,
+      "node_id": 19,
+      "ops": 0
+    },
+    {
+      "average_acc_power_mw": 0,
+      "average_memory_power_mw": 0,
+      "compute_cycles": 560,
+      "max_cycles": 12288,
+      "node_id": 21,
+      "ops": 1024
+    },
+    {
+      "average_acc_power_mw": 0,
+      "average_memory_power_mw": 0,
+      "compute_cycles": 0,
+      "max_cycles": 0,
+      "node_id": 23,
+      "ops": 0
+    },
+    {
+      "average_acc_power_mw": 0,
+      "average_memory_power_mw": 0,
+      "compute_cycles": 48,
+      "max_cycles": 384,
+      "node_id": 25,
+      "ops": 16
+    },
+    {
+      "average_acc_power_mw": 0,
+      "average_memory_power_mw": 0,
+      "compute_cycles": 32,
+      "max_cycles": 32,
+      "node_id": 27,
+      "ops": 0
+    },
+    {
+      "average_acc_power_mw": 0,
+      "average_memory_power_mw": 0,
+      "compute_cycles": 0,
+      "max_cycles": 0,
+      "node_id": 29,
+      "ops": 0
+    },
+    {
+      "average_acc_power_mw": 0,
+      "average_memory_power_mw": 0,
+      "compute_cycles": 50,
+      "max_cycles": 768,
+      "node_id": 31,
+      "ops": 64
+    },
+    {
+      "average_acc_power_mw": 0,
+      "average_memory_power_mw": 0,
+      "compute_cycles": 0,
+      "max_cycles": 0,
+      "node_id": 33,
+      "ops": 0
+    },
+    {
+      "average_acc_power_mw": 0,
+      "average_memory_power_mw": 0,
+      "compute_cycles": 6,
+      "max_cycles": 48,
+      "node_id": 35,
+      "ops": 2
+    },
+    {
+      "average_acc_power_mw": 0,
+      "average_memory_power_mw": 0,
+      "compute_cycles": 0,
+      "max_cycles": 0,
+      "node_id": 37,
+      "ops": 0
+    }
+  ]
+}
